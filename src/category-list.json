@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+     "title": "Ručni radovi",
+      "imageUrl":
+        "https://images.pexels.com/photos/5788491/pexels-photo-5788491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+     "id": 2,
+    "title": "Dodaci Za bebe",
+      "imageUrl":
+        "https://images.pexels.com/photos/11294260/pexels-photo-11294260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "id": 3,
+      "title": "Modni dodaci",
+      "imageUrl":
+        "https://img.freepik.com/free-photo/wool-elements-space-right_23-2147691749.jpg?w=1380&t=st=1690408330~exp=1690408930~hmac=1b49a932d9815f0a7fce5ca05126fa9ea31767dd732f392653fdcddf59a1187f"
+    },
+    {
+      "id": 4,
+      "title": "Muškarci",
+      "imageUrl":
+        "https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    },
+    {
+      "id": 5,
+      "title": "Žene",
+      "imageUrl":
+        "https://images.pexels.com/photos/848554/pexels-photo-848554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    }
+  ]
