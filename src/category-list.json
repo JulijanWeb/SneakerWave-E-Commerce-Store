@@ -1,32 +1,32 @@
 [
     {
       "id": 1,
-     "title": "Ručni radovi",
+     "title": "NOVO",
       "imageUrl":
-        "https://images.pexels.com/photos/5788491/pexels-photo-5788491.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        "http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider1.jpg"
     },
     {
      "id": 2,
-    "title": "Dodaci Za bebe",
+    "title": "Brandovi",
       "imageUrl":
-        "https://images.pexels.com/photos/11294260/pexels-photo-11294260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        "https://www.buzzsneakers.hr/files/images/2023/4/11/muskarcipadajucimenibuzznovo.jpg.webp"
     },
     {
       "id": 3,
-      "title": "Modni dodaci",
+      "title": "Dječji",
       "imageUrl":
-        "https://img.freepik.com/free-photo/wool-elements-space-right_23-2147691749.jpg?w=1380&t=st=1690408330~exp=1690408930~hmac=1b49a932d9815f0a7fce5ca05126fa9ea31767dd732f392653fdcddf59a1187f"
+        "https://www.buzzsneakers.hr/files/images/2023/8/9/Buzz%20Sale%20K%20JULY23%201920x789.jpeg"
     },
     {
       "id": 4,
-      "title": "Muškarci",
+      "title": "Muški",
       "imageUrl":
-        "https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        "https://www.buzzsneakers.hr/files/images/2023/8/9/Buzz%20Sale%20M%20JULY23%201920x789.jpeg"
     },
     {
       "id": 5,
-      "title": "Žene",
+      "title": "Ženski",
       "imageUrl":
-        "https://images.pexels.com/photos/848554/pexels-photo-848554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        "https://www.buzzsneakers.hr/files/images/2023/8/9/Buzz%20Sale%20W%20JULY23%201920x789.jpeg.webp"
     }
   ]
