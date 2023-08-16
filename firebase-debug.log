@@ -1,0 +1,94 @@
+[debug] [2023-08-15T10:29:33.925Z] ----------------------------------------------------------------------
+[debug] [2023-08-15T10:29:33.931Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\orest\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-15T10:29:33.932Z] CLI Version:   12.4.7
+[debug] [2023-08-15T10:29:33.933Z] Platform:      win32
+[debug] [2023-08-15T10:29:33.933Z] Node Version:  v18.16.1
+[debug] [2023-08-15T10:29:33.935Z] Time:          Tue Aug 15 2023 12:29:33 GMT+0200 (srednjoeuropsko ljetno vrijeme)
+[debug] [2023-08-15T10:29:33.935Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-15T10:29:33.954Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T10:29:33.956Z] > authorizing via signed-in user (orestwebdesign@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\orest\Desktop\zavrsni-rad-projekt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-15T10:29:51.096Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-15T10:29:51.811Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-08-15T10:29:51.811Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project sneakerwave-db (SneakerWave-db) 
+[info] 
+=== Firestore Setup
+[debug] [2023-08-15T10:30:00.450Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sneakerwave-db/services/firestore.googleapis.com [none]
+[debug] [2023-08-15T10:30:00.450Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sneakerwave-db/services/firestore.googleapis.com x-goog-quota-user=projects/sneakerwave-db
+[debug] [2023-08-15T10:30:01.640Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sneakerwave-db/services/firestore.googleapis.com 200
+[debug] [2023-08-15T10:30:01.640Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sneakerwave-db/services/firestore.googleapis.com [omitted]
+[debug] [2023-08-15T10:30:01.641Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sneakerwave-db/databases/(default) [none]
+[debug] [2023-08-15T10:30:02.519Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sneakerwave-db/databases/(default) 200
+[debug] [2023-08-15T10:30:02.520Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sneakerwave-db/databases/(default) {"name":"projects/sneakerwave-db/databases/(default)","uid":"b8876cf3-5545-447b-b44a-57ddfbb2c144","createTime":"2023-08-14T17:52:54.986272Z","updateTime":"2023-08-14T17:52:54.986272Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-08-15T09:30:02.835391Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IK31pcu63oADMNPBqJ6W3YAD"}
+[debug] [2023-08-15T10:30:02.520Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-08-15T10:30:02.521Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T10:30:02.521Z] > authorizing via signed-in user (orestwebdesign@gmail.com)
+[debug] [2023-08-15T10:30:02.521Z] [iam] checking project sneakerwave-db for permissions ["firebase.projects.get"]
+[debug] [2023-08-15T10:30:02.522Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sneakerwave-db:testIamPermissions [none]
+[debug] [2023-08-15T10:30:02.522Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sneakerwave-db:testIamPermissions x-goog-quota-user=projects/sneakerwave-db
+[debug] [2023-08-15T10:30:02.522Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sneakerwave-db:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-15T10:30:03.951Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sneakerwave-db:testIamPermissions 200
+[debug] [2023-08-15T10:30:03.951Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sneakerwave-db:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-08-15T10:37:13.687Z] ----------------------------------------------------------------------
+[debug] [2023-08-15T10:37:13.691Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\orest\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-08-15T10:37:13.692Z] CLI Version:   12.4.7
+[debug] [2023-08-15T10:37:13.693Z] Platform:      win32
+[debug] [2023-08-15T10:37:13.693Z] Node Version:  v18.16.1
+[debug] [2023-08-15T10:37:13.695Z] Time:          Tue Aug 15 2023 12:37:13 GMT+0200 (srednjoeuropsko ljetno vrijeme)
+[debug] [2023-08-15T10:37:13.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-15T10:37:13.709Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T10:37:13.710Z] > authorizing via signed-in user (orestwebdesign@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\orest\Desktop\zavrsni-rad-projekt
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-15T10:37:23.744Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-15T10:37:24.434Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-08-15T10:37:24.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project sneakerwave-db (SneakerWave-db) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
