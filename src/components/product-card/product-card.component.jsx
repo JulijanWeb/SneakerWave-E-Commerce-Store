@@ -2,9 +2,9 @@ import React from "react";
 import Button from "../button/button.component";
 import "./product-card.styles.scss";
 import { useState } from "react";
-import useCartStore from "../../shop/cart-store.component";
+import useCartStore from "../../shop/cart-store.store";
 
-const ProductCard = ({ imageUrl, name, price, sizes, id }) => {
+const ProductCard = ({ imageUrl, name, price, sizes, id, quantity }) => {
   const { addToCart, updateIfExists, cart } = useCartStore();
   const [cSize, setcSize] = useState();
   const setSelectedSize = useCartStore((state) => state.setSelectedSize);
@@ -15,17 +15,17 @@ const ProductCard = ({ imageUrl, name, price, sizes, id }) => {
     setSelectedSize(newSize);
   };
 
-  const buttonClick = ({ imageUrl, name, price, id }) => {
+  const buttonClick = ({ imageUrl, name, price, id, quantity }) => {
     if (cSize) {
       let pass = false;
       for (let i = 0; i < cart.length; i++) {
         if (cart[i].id === id) {
-          updateIfExists({ imageUrl, name, price, cSize, id });
+          updateIfExists({ imageUrl, name, price, cSize, id, quantity });
           pass = true;
         }
       }
       if (pass === false) {
-        addToCart({ imageUrl, name, price, cSize, id });
+        addToCart({ imageUrl, name, price, cSize, id, quantity });
       }
     }
   };
@@ -50,7 +50,7 @@ const ProductCard = ({ imageUrl, name, price, sizes, id }) => {
       </div>
       <Button
         buttonType={cSize ? "" : "disabled"}
-        onClick={() => buttonClick({ imageUrl, name, price, id })}
+        onClick={() => buttonClick({ imageUrl, name, price, id, quantity })}
       >
         Add to cart
       </Button>

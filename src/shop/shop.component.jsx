@@ -20,6 +20,7 @@ const Shop = () => {
           imageUrl={product.imageUrl}
           name={product.name}
           price={product.price}
+          quantity={product.quantity}
         />
       ))}
     </div>

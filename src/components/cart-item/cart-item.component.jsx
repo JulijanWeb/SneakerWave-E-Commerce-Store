@@ -1,9 +1,15 @@
-import useCartStore from "../../shop/cart-store.component";
+import useCartStore from "../../shop/cart-store.store";
 import { FaTrash } from "react-icons/fa";
 import "./cart-item.styles.scss";
+
 const CartItem = ({ cartItem }) => {
-  const { name, imageUrl, id, price, cSize } = cartItem;
   const { removeFromCart } = useCartStore();
+
+  if (!cartItem) {
+    return null;
+  }
+
+  const { name, imageUrl, id, price, cSize } = cartItem;
 
   return (
     <div>

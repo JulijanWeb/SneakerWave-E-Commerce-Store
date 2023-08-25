@@ -1,5 +1,5 @@
 import { ReactComponent as ShopingIcon } from "../../assets/shopping-bag.svg";
-import useCartStore from "../../shop/cart-store.component";
+import useCartStore from "../../shop/cart-store.store";
 import useDropDownStore from "../../shop/cart-dropdown-store";
 import "./cart-icon.styles.scss";
 

@@ -1,104 +1,102 @@
 [
-
-{
-  "id": 2,
-  "name": "Vans Check Board",
-  "imageUrl": "/images/vans-check-board.png",
-  "price": "49.99",
-  "description":
-    "The Vans check board sneakers are a trendy and fashionable choice for casual wear. Featuring the iconic checkered pattern, these sneakers add a bold and playful touch to any outfit. They provide comfort, style, and are perfect for skateboarding or everyday use.",
-  "brand": "Vans",
-  "category": "Sneakers",
-  "countInStock": 13,
-  "rating": 4.5,
-  "numReviews": 5,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-  
-},
-{
-  "id": 3,
-  "name": "Nike Air Force",
-  "imageUrl": "/images/nike-air-force.png",
-  "price": "64.99",
-  "description":
-    "The Nike air force sneakers are a classic and versatile choice. They offer excellent comfort and support with their cushioned midsole and durable construction. These sneakers feature a timeless design that complements various styles and outfits.",
-  "brand": "Nike",
-  "category": "Sneakers",
-  "countInStock": 6,
-  "rating": 4,
-  "numReviews": 4,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-},
-{
-  "id": 4,
-  "name": "Nike Jordan University Blue",
-  "imageUrl": "/images/nike-jordan-university-blue.png",
-  "coverImage": "/images/nike-jordon-cover.png",
-  "price": "149.99",
-  "description":
-    "The Nike jordan university blue sneakers are a must-have for basketball enthusiasts and sneaker collectors. These high-top sneakers feature a premium leather construction, excellent cushioning, and iconic Jordan branding. They provide style, performance, and are perfect for both on-court and off-court wear.",
-  "brand": "Nike",
-  "category": "Sneakers",
-  "countInStock": 6,
-  "rating": 5,
-  "numReviews": 5,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-},
-{
-  "id": 5,
-  "name": "Nike Travis Scott Phantom Black",
-  "imageUrl": "/images/nike-travis-scott-phanton-black.png",
-  "price": "139.99",
-  "description":
-    "The Nike travis scott phantom black sneakers are a stylish and trendy choice. Designed in collaboration with Travis Scott, these sneakers offer a unique and eye-catching aesthetic. They provide comfort, style, and are perfect for fashion-forward individuals.",
-  "brand": "Nike",
-  "category": "Sneakers",
-  "countInStock": 2,
-  "rating": 4.2,
-  "numReviews": 4,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-},
-{
-  "id": 6,
-  "name": "Adidas Campus Green",
-  "imageUrl": "/images/adidas-campus-green.png",
-  "price": "65.99",
-  "description":
-    "The Adidas campus green sneakers are a stylish and versatile choice. With their classic silhouette and vibrant green color, these sneakers add a pop of color to your outfit. They offer comfort, durability, and are suitable for various occasions.",
-  "brand": "Adidas",
-  "category": "Sneakers",
-  "countInStock": 9,
-  "rating": 3,
-  "numReviews": 7,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-},
-{
-  "id": 7,
-  "name": "Nike Dunk Low Fog Grey",
-  "imageUrl": "/images/nike-dunk-low-fog-grey.png",
-  "price": "119.99",
-  "description":
-    "The Nike dunk low fog grey sneakers are a stylish and trendy choice for sneaker enthusiasts. Featuring a low-top design and premium materials, these sneakers offer both style and comfort. They are suitable for everyday wear or adding a fashionable touch to your outfit.",
-  "brand": "Nike",
-  "category": "Sneakers",
-  "countInStock": 5,
-  "rating": 4.8,
-  "numReviews": 18,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-},
-{
-  "id": 8,
-  "name": "Vans Old Skool Black",
-  "imageUrl": "/images/vans-old-skool-black.png",
-  "coverImage": "/images/vans-old-skool-cover.png",
-  "price": "44.99",
-  "description":
-    "The Vans old skool black sneakers are a timeless and versatile choice. With their classic design and all-black colorway, these sneakers offer a sleek and minimalist aesthetic. They provide comfort, durability, and are suitable for various occasions.",
-  "brand": "Vans",
-  "category": "Sneakers",
-  "countInStock": 0,
-  "rating": 5,
-  "numReviews": 18,
-  "sizes":[35,36,37,38,39,40,41,42,43,44,45,46]
-}
+  {
+    "id": 2,
+    "name": "Vans Check Board",
+    "imageUrl": "/images/vans-check-board.png",
+    "price": "49.99",
+    "description": "The Vans check board sneakers are a trendy and fashionable choice for casual wear. Featuring the iconic checkered pattern, these sneakers add a bold and playful touch to any outfit. They provide comfort, style, and are perfect for skateboarding or everyday use.",
+    "brand": "Vans",
+    "category": "Sneakers",
+    "countInStock": 13,
+    "rating": 4.5,
+    "numReviews": 5,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  },
+  {
+    "id": 3,
+    "name": "Nike Air Force",
+    "imageUrl": "/images/nike-air-force.png",
+    "price": "64.99",
+    "description": "The Nike air force sneakers are a classic and versatile choice. They offer excellent comfort and support with their cushioned midsole and durable construction. These sneakers feature a timeless design that complements various styles and outfits.",
+    "brand": "Nike",
+    "category": "Sneakers",
+    "countInStock": 6,
+    "rating": 4,
+    "numReviews": 4,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  },
+  {
+    "id": 4,
+    "name": "Nike Jordan University Blue",
+    "imageUrl": "/images/nike-jordan-university-blue.png",
+    "coverImage": "/images/nike-jordon-cover.png",
+    "price": "149.99",
+    "description": "The Nike jordan university blue sneakers are a must-have for basketball enthusiasts and sneaker collectors. These high-top sneakers feature a premium leather construction, excellent cushioning, and iconic Jordan branding. They provide style, performance, and are perfect for both on-court and off-court wear.",
+    "brand": "Nike",
+    "category": "Sneakers",
+    "countInStock": 6,
+    "rating": 5,
+    "numReviews": 5,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  },
+  {
+    "id": 5,
+    "name": "Nike Travis Scott Phantom Black",
+    "imageUrl": "/images/nike-travis-scott-phanton-black.png",
+    "price": "139.99",
+    "description": "The Nike travis scott phantom black sneakers are a stylish and trendy choice. Designed in collaboration with Travis Scott, these sneakers offer a unique and eye-catching aesthetic. They provide comfort, style, and are perfect for fashion-forward individuals.",
+    "brand": "Nike",
+    "category": "Sneakers",
+    "countInStock": 2,
+    "rating": 4.2,
+    "numReviews": 4,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  },
+  {
+    "id": 6,
+    "name": "Adidas Campus Green",
+    "imageUrl": "/images/adidas-campus-green.png",
+    "price": "65.99",
+    "description": "The Adidas campus green sneakers are a stylish and versatile choice. With their classic silhouette and vibrant green color, these sneakers add a pop of color to your outfit. They offer comfort, durability, and are suitable for various occasions.",
+    "brand": "Adidas",
+    "category": "Sneakers",
+    "countInStock": 9,
+    "rating": 3,
+    "numReviews": 7,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  },
+  {
+    "id": 7,
+    "name": "Nike Dunk Low Fog Grey",
+    "imageUrl": "/images/nike-dunk-low-fog-grey.png",
+    "price": "119.99",
+    "description": "The Nike dunk low fog grey sneakers are a stylish and trendy choice for sneaker enthusiasts. Featuring a low-top design and premium materials, these sneakers offer both style and comfort. They are suitable for everyday wear or adding a fashionable touch to your outfit.",
+    "brand": "Nike",
+    "category": "Sneakers",
+    "countInStock": 5,
+    "rating": 4.8,
+    "numReviews": 18,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  },
+  {
+    "id": 8,
+    "name": "Vans Old Skool Black",
+    "imageUrl": "/images/vans-old-skool-black.png",
+    "coverImage": "/images/vans-old-skool-cover.png",
+    "price": "44.99",
+    "description": "The Vans old skool black sneakers are a timeless and versatile choice. With their classic design and all-black colorway, these sneakers offer a sleek and minimalist aesthetic. They provide comfort, durability, and are suitable for various occasions.",
+    "brand": "Vans",
+    "category": "Sneakers",
+    "countInStock": 0,
+    "rating": 5,
+    "numReviews": 18,
+    "sizes": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
+    "quantity": 0
+  }
 ]
