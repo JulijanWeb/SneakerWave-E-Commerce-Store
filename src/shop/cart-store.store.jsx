@@ -32,9 +32,6 @@ const useCartStore = create((set) => ({
   removeFromCart: (productToRemove) => {
     const state = useCartStore.getState();
 
-    console.log(state.cart);
-    console.log(productToRemove);
-
     const newCart = [...state.cart];
 
     const index = newCart.findIndex((item) => item.id === productToRemove.id);
