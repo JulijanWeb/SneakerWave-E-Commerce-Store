@@ -1,6 +1,8 @@
 import { create } from "zustand";
 
-export const useCartStore = create((set) => ({
+const useDropDownStore = create((set) => ({
   isCartOpen: false,
   setIsCartOpen: (isOpen) => set({ isCartOpen: isOpen }),
 }));
+
+export default useDropDownStore;

@@ -1,7 +1,7 @@
 .cart-dropdown-container {
   position: absolute;
-  width: 240px;
-  height: 340px;
+  width: 340px;
+  height: 440px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -10,20 +10,24 @@
   top: 90px;
   right: 40px;
   z-index: 5;
+}
 
-  .empty-message {
-    font-size: 18px;
-    margin: 50px auto;
-  }
+.empty-cart {
+  font-size: 18px;
+  margin: 50px auto;
+}
 
-  .cart-items {
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    overflow: scroll;
-  }
+.cart-items {
+  width: 100%;
+  flex: 1; /* Ostatak visine dostupan za ovaj kontejner */
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
 
-  button {
-    margin-top: auto;
-  }
+hr {
+  border: none;
+  height: 1px;
+  color: black;
+  background-color: black;
 }

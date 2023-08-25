@@ -1,15 +1,59 @@
 import React from "react";
 import Button from "../button/button.component";
 import "./product-card.styles.scss";
-const ProductCard = ({ imageUrl, name, price }) => {
+import { useState } from "react";
+import useCartStore from "../../shop/cart-store.component";
+
+const ProductCard = ({ imageUrl, name, price, sizes, id }) => {
+  const { addToCart, updateIfExists, cart } = useCartStore();
+  const [cSize, setcSize] = useState();
+  const setSelectedSize = useCartStore((state) => state.setSelectedSize);
+
+  const handleSizeChange = (e) => {
+    const newSize = e.target.value;
+    setcSize(newSize);
+    setSelectedSize(newSize);
+  };
+
+  const buttonClick = ({ imageUrl, name, price, id }) => {
+    if (cSize) {
+      let pass = false;
+      for (let i = 0; i < cart.length; i++) {
+        if (cart[i].id === id) {
+          updateIfExists({ imageUrl, name, price, cSize, id });
+          pass = true;
+        }
+      }
+      if (pass === false) {
+        addToCart({ imageUrl, name, price, cSize, id });
+      }
+    }
+  };
+
   return (
     <div className="product-card-container">
+      <div className="size-dropdown">
+        <select className="dropdown" value={cSize} onChange={handleSizeChange}>
+          <option value="">Select Size</option>
+          {sizes.map((size, index) => (
+            <option key={index} value={size}>
+              {size}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <img src={imageUrl} alt={name} />
       <div className="footer">
         <span className="name">{name}</span>
         <span className="price">${price}</span>
       </div>
-      <Button buttonType="inverted">Add to cart</Button>
+      <Button
+        buttonType={cSize ? "" : "disabled"}
+        onClick={() => buttonClick({ imageUrl, name, price, id })}
+      >
+        Add to cart
+      </Button>
     </div>
   );
 };

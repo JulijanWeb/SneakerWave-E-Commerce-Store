@@ -9,7 +9,7 @@
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bolder;
   border: none;
   cursor: pointer;
@@ -42,5 +42,19 @@
       color: white;
       border: none;
     }
+  }
+  &.disabled {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid black !important;
+
+    &:hover {
+      background-color: black !important;
+      color: white !important;
+      border: 1px solid black !important;
+    }
+  }
+  &.checkout {
+    display: none;
   }
 }

@@ -1,0 +1,58 @@
+.remove-button {
+  text-decoration: none;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  color: red;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.fi-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.cart-count {
+  margin: 0;
+  flex: 1;
+}
+.removeAll {
+  background: none;
+  border: none;
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cart-details-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  font-family: "Open Sans Condensed";
+}
+
+.flex-info > p {
+  margin: 0;
+  padding: 2px;
+}
+
+.flex-img {
+  width: 40%;
+}
+
+.flex-img > img {
+  width: 100px;
+  height: 80px;
+}

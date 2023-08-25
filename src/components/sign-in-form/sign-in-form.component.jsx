@@ -3,10 +3,7 @@ import { useState, useContext } from "react";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 import { UserContext } from "../../contexts/user.context";
-import {
-  createUserDocumentFromAuth,
-  signInAuthUserWithEmailAndPassword,
-} from "../../utils/firebase.utils";
+import { signInAuthUserWithEmailAndPassword } from "../../utils/firebase.utils";
 
 import "./sign-in-form.styles.scss";
 

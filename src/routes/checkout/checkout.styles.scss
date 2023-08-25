@@ -1,0 +1,35 @@
+.checkout-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+  font-family: "Open Sans Condensed";
+  border-bottom: 1px solid darkgrey;
+  padding: 0 100px;
+}
+
+.no-items {
+  font-family: "Open Sans Condensed";
+  font-size: 2rem;
+}
+
+.no-items {
+  display: flex;
+  padding-top: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  width: 30%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  align-items: center;
+  padding-bottom: 0;
+  font-family: "Open Sans Condensed";
+  font-size: 18px;
+}
