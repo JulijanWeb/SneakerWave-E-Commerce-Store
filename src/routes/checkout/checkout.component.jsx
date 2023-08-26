@@ -1,6 +1,8 @@
 import "./checkout.styles.scss";
 import useCartStore from "../../shop/cart-store.store";
 import { FaTrash } from "react-icons/fa";
+import { BiChevronLeft } from "react-icons/bi";
+import { BiChevronRight } from "react-icons/bi";
 
 const Checkout = () => {
   const { removeFromCart, decreaseCartItemQuantity, increaseCartItemQuantity } =
@@ -20,7 +22,7 @@ const Checkout = () => {
               <th>Price</th>
               <th>Size</th>
               <th>Quantity</th>
-              <th>Actions</th>
+              <th>Remove</th>
             </tr>
           </thead>
           <tbody>
@@ -35,16 +37,16 @@ const Checkout = () => {
                   <td className="price">Price: {price} $</td>
                   <td>Size: {cSize}</td>
                   <td>
+                    <button onClick={() => decreaseCartItemQuantity(cartItem)}>
+                      <BiChevronLeft />
+                    </button>
                     Quantity:{" "}
                     <span className="quantity">{cartItem.quantity}</span>
+                    <button onClick={() => increaseCartItemQuantity(cartItem)}>
+                      <BiChevronRight />
+                    </button>
                   </td>
                   <td>
-                    <button onClick={() => decreaseCartItemQuantity(cartItem)}>
-                      Decrease
-                    </button>
-                    <button onClick={() => increaseCartItemQuantity(cartItem)}>
-                      Increment
-                    </button>
                     <button
                       className="remove-button"
                       onClick={() => removeFromCart(cartItem)}
