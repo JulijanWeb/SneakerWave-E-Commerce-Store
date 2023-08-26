@@ -15,9 +15,30 @@ const CartDropdown = () => {
   const removeFromCart = useCartStore((state) => state.removeFromCart);
   const resetCart = useCartStore((state) => state.resetCart);
   const countCart = cart.length;
+  const [isMouseLeft, setIsMouseLeft] = useState(false);
+
+  const handleOnBlur = () => {
+    if (!isMouseLeft) {
+      return;
+    }
+    closeCartDropdown();
+  };
+
+  const handleOnMouseEnter = () => {
+    setIsMouseLeft(true);
+  };
+
+  const handleOnMouseLeave = () => {
+    setIsMouseLeft(false);
+  };
 
   return (
-    <div className="cart-dropdown-container">
+    <div
+      onBlur={handleOnBlur}
+      onMouseEnter={handleOnMouseEnter}
+      onMouseLeave={handleOnMouseLeave}
+      className="cart-dropdown-container"
+    >
       {countCart >= 0 ? (
         <div className="fi-flex">
           <p>Your cart: {countCart} items</p>
