@@ -1,31 +1,26 @@
 [
-    {
-      "id": 1,
-     "title": "NOVO",
-      "imageUrl":
-        "http://sneaker.mallthemes.com/wp-content/uploads/2018/11/home1-slider1.jpg"
-    },
+
     {
      "id": 2,
-    "title": "Brandovi",
+    "title": "Brands",
       "imageUrl":
         "https://www.buzzsneakers.hr/files/images/2023/4/11/muskarcipadajucimenibuzznovo.jpg.webp"
     },
     {
       "id": 3,
-      "title": "Dječji",
+      "title": "Kids",
       "imageUrl":
         "https://www.buzzsneakers.hr/files/images/2023/8/9/Buzz%20Sale%20K%20JULY23%201920x789.jpeg"
     },
     {
       "id": 4,
-      "title": "Muški",
+      "title": "Men",
       "imageUrl":
         "https://www.buzzsneakers.hr/files/images/2023/8/9/Buzz%20Sale%20M%20JULY23%201920x789.jpeg"
     },
     {
       "id": 5,
-      "title": "Ženski",
+      "title": "Women",
       "imageUrl":
         "https://www.buzzsneakers.hr/files/images/2023/8/9/Buzz%20Sale%20W%20JULY23%201920x789.jpeg.webp"
     }

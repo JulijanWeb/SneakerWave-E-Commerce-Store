@@ -12,7 +12,7 @@ const CategoryItem = ({ category }) => {
       />
       <div className="category-body-container">
         <h2>{title}</h2>
-        <p>Kupi</p>
+        {/* <p>Kupi</p> */}
       </div>
     </div>
   );
