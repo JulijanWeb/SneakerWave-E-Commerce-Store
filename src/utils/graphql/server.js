@@ -12,8 +12,8 @@ admin.initializeApp({
 const typeDefs = gql`
   type Product {
     id: ID
-    brand: String
-    category: String
+    brandId: String
+    categoryId: String
     description: String
     imageUrl: String
     name: String

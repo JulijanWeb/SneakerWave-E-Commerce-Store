@@ -27,7 +27,9 @@ googleProvider.setCustomParameters({
 
 export const auth = getAuth();
 
-export const db = getFirestore();
+const db = getFirestore();
+
+export default db;
 
 export const createUserDocumentFromAuth = async (
   userAuth,

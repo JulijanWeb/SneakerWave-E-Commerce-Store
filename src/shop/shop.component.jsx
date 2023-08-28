@@ -14,6 +14,8 @@ const Shop = () => {
         imageUrl
         sizes
         quantity
+        brandId
+        categoryId
       }
     }
   `;
