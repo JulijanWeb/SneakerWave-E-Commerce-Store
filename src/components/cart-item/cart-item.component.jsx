@@ -27,7 +27,7 @@ const CartItem = ({ cartItem }) => {
           <img src={imageUrl} alt={id} />
         </div>
         <div className="flex-info">
-          <span>Price: {price} $</span>
+          <span>Price: {price} €</span>
           <p>Size: {cSize}</p>
         </div>
 

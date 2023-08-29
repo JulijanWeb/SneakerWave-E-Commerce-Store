@@ -12,6 +12,7 @@ const ProductCard = ({
   id,
   quantity,
   category,
+  brand,
 }) => {
   const { addToCart, updateIfExists, cart } = useCartStore();
   const [cSize, setcSize] = useState();
@@ -46,6 +47,9 @@ const ProductCard = ({
   };
   return (
     <div className="product-card-container">
+      <span className="brand">
+        <img src={brand?.imageUrl} />
+      </span>
       <div className="size-dropdown">
         <select className="dropdown" value={cSize} onChange={handleSizeChange}>
           <option value="">Select Size</option>
@@ -56,12 +60,15 @@ const ProductCard = ({
           ))}
         </select>
       </div>
-      <img src={imageUrl} alt={name} />
+
+      <img className="product-image" src={imageUrl} alt={name} />
+
       <div className="footer">
         <span className="name">{name}</span>
-        <span className="price">${price}</span>
-        <span className="category">Category: {category?.name}</span>
+        <span className="price">{price} €</span>
+        <span className="category">{category?.name}</span>
       </div>
+
       <Button
         buttonType={cSize ? "" : "disabled"}
         onClick={() => buttonClick({ imageUrl, name, price, id, quantity })}

@@ -67,6 +67,7 @@ const Shop = () => {
           price={product.price}
           quantity={product.quantity}
           category={product.category}
+          brand={product.brand}
         />
       ))}
     </div>
