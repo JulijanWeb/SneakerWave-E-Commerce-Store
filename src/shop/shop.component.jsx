@@ -39,8 +39,9 @@ const Shop = () => {
 
     const newProducts = products.filter(
       (product) =>
-        filters.brands.includes(product.brandId) ||
-        filters.categories.includes(product.categoryId)
+        (!filters.brands.length || filters.brands.includes(product.brandId)) &&
+        (!filters.categories.length ||
+          filters.categories.includes(product.categoryId))
     );
 
     setFilteredProducts(newProducts);
