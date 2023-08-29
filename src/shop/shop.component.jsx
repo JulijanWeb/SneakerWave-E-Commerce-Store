@@ -1,10 +1,13 @@
 import { useQuery, gql } from "@apollo/client";
-import { useEffect } from "react";
-import useProductsStore from "./store.component";
+import { useEffect, useState } from "react";
+import useProductsStore from "./product.store";
 import ProductCard from "../components/product-card/product-card.component.jsx";
 import "./shop.styles.scss";
 const Shop = () => {
-  const setProducts = useProductsStore((state) => state.setProducts);
+  const { setProducts, products, filters, resetFilters } = useProductsStore();
+
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
   const PRODUCTS_QUERY = gql`
     query {
       products {
@@ -23,17 +26,37 @@ const Shop = () => {
   const { loading, error, data } = useQuery(PRODUCTS_QUERY);
 
   useEffect(() => {
-    if (data) {
-      setProducts(data.products);
+    if (!data) {
+      return;
     }
+    setProducts(data.products);
   }, [data, setProducts]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  useEffect(() => {
+    if (!products || !filters) {
+      return;
+    }
+
+    const newProducts = products.filter(
+      (product) =>
+        filters.brands.includes(product.brandId) ||
+        filters.categories.includes(product.categoryId)
+    );
+
+    setFilteredProducts(newProducts);
+  }, [products, filters]);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (error) {
+    return <p>Error: {error.message}</p>;
+  }
 
   return (
     <div className="products-container">
-      {data.products.map((product) => (
+      {filteredProducts.map((product) => (
         <ProductCard
           key={product.id}
           id={product.id}

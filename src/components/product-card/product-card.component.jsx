@@ -3,7 +3,6 @@ import Button from "../button/button.component";
 import "./product-card.styles.scss";
 import { useState } from "react";
 import useCartStore from "../../shop/cart-store.store";
-import useProductsStore from "../../shop/store.component";
 
 const ProductCard = ({
   imageUrl,

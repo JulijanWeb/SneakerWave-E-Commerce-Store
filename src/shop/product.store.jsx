@@ -1,9 +1,22 @@
 import { create } from "zustand";
 import db from "../utils/firebase.utils";
-import { collection, getDocs, query, where } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 const useProductsStore = create((set) => ({
   products: [],
+  filters: {
+    brands: [],
+    categories: [],
+  },
+
+  setFilters: (filters) => {
+    set({ filters });
+  },
+
+  resetFilters: () => {
+    set({ filters: { brands: [], categories: [] } });
+  },
+
   setProducts: async (products) => {
     const brandsRef = collection(db, "brands");
     const categoriesRef = collection(db, "category");
@@ -42,7 +55,7 @@ const useProductsStore = create((set) => ({
       };
     });
 
-    set({ newProducts });
+    set({ products: newProducts });
   },
 }));
 
