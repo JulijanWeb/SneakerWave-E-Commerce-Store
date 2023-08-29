@@ -3,8 +3,17 @@ import Button from "../button/button.component";
 import "./product-card.styles.scss";
 import { useState } from "react";
 import useCartStore from "../../shop/cart-store.store";
+import useProductsStore from "../../shop/store.component";
 
-const ProductCard = ({ imageUrl, name, price, sizes, id, quantity }) => {
+const ProductCard = ({
+  imageUrl,
+  name,
+  price,
+  sizes,
+  id,
+  quantity,
+  category,
+}) => {
   const { addToCart, updateIfExists, cart } = useCartStore();
   const [cSize, setcSize] = useState();
   const setSelectedSize = useCartStore((state) => state.setSelectedSize);
@@ -20,7 +29,14 @@ const ProductCard = ({ imageUrl, name, price, sizes, id, quantity }) => {
       let pass = false;
       for (let i = 0; i < cart.length; i++) {
         if (cart[i].id === id) {
-          updateIfExists({ imageUrl, name, price, cSize, id, quantity });
+          updateIfExists({
+            imageUrl,
+            name,
+            price,
+            cSize,
+            id,
+            quantity,
+          });
           pass = true;
         }
       }
@@ -29,7 +45,6 @@ const ProductCard = ({ imageUrl, name, price, sizes, id, quantity }) => {
       }
     }
   };
-
   return (
     <div className="product-card-container">
       <div className="size-dropdown">
@@ -42,11 +57,11 @@ const ProductCard = ({ imageUrl, name, price, sizes, id, quantity }) => {
           ))}
         </select>
       </div>
-
       <img src={imageUrl} alt={name} />
       <div className="footer">
         <span className="name">{name}</span>
         <span className="price">${price}</span>
+        <span className="category">Category: {category?.name}</span>
       </div>
       <Button
         buttonType={cSize ? "" : "disabled"}

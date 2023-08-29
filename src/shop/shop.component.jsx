@@ -42,6 +42,7 @@ const Shop = () => {
           name={product.name}
           price={product.price}
           quantity={product.quantity}
+          category={product.category}
         />
       ))}
     </div>
