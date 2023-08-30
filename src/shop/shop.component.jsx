@@ -1,12 +1,17 @@
 import { useQuery, gql } from "@apollo/client";
 import { useEffect, useState } from "react";
 import useProductsStore from "./product.store";
+import ReactLoading from "react-loading";
 import ProductCard from "../components/product-card/product-card.component.jsx";
 import "./shop.styles.scss";
 const Shop = () => {
   const { setProducts, products, filters, resetFilters } = useProductsStore();
 
   const [filteredProducts, setFilteredProducts] = useState(products);
+
+  const Loading = ({ type, color }) => (
+    <ReactLoading type={type} color={color} height={100} width={100} />
+  );
 
   const PRODUCTS_QUERY = gql`
     query {
@@ -48,7 +53,11 @@ const Shop = () => {
   }, [products, filters]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="loading-spin">
+        <Loading type="spin" color="#000" />
+      </div>
+    );
   }
 
   if (error) {
