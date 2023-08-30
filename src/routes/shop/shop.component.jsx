@@ -2,7 +2,7 @@ import { useQuery, gql } from "@apollo/client";
 import { useEffect, useState } from "react";
 import useProductsStore from "./product.store";
 import ReactLoading from "react-loading";
-import ProductCard from "../components/product-card/product-card.component.jsx";
+import ProductCard from "../../components/product-card/product-card.component.jsx";
 import "./shop.styles.scss";
 const Shop = () => {
   const { setProducts, products, filters, resetFilters } = useProductsStore();

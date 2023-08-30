@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import db from "../utils/firebase.utils";
+import db from "../../core/utils/firebase.utils";
 import { collection, getDocs } from "firebase/firestore";
 
 const useProductsStore = create((set) => ({

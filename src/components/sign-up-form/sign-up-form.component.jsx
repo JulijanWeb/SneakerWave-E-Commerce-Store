@@ -7,7 +7,7 @@ import { UserContext } from "../../contexts/user.context";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
-} from "../../utils/firebase.utils";
+} from "../../core/utils/firebase.utils";
 
 import "./sign-up-form.styles.scss";
 

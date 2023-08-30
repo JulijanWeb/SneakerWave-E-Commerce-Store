@@ -1,4 +1,4 @@
-import useCartStore from "../../shop/cart-store.store";
+import useCartStore from "../../routes/shop/cart-store.store";
 import { FaTrash } from "react-icons/fa";
 import "./cart-item.styles.scss";
 

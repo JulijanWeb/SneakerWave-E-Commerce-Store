@@ -4,7 +4,7 @@ import { FiRefreshCcw } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 import CartItem from "../cart-item/cart-item.component";
 import "./cart-dropdown.styles.scss";
-import useCartStore from "../../shop/cart-store.store";
+import useCartStore from "../../routes/shop/cart-store.store";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 
 const CartDropdown = () => {

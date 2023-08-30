@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import "./navigation.styles.scss";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { UserContext } from "../../contexts/user.context";
-import { signOutUser } from "../../utils/firebase.utils";
+import { signOutUser } from "../../core/utils/firebase.utils";
 const Navigation = () => {
   const { currentUser, setCurrentUser } = useContext(UserContext);
   const signOutHandler = async () => {
