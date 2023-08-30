@@ -1,4 +1,4 @@
-import Directory from "..//../directory/directory-component";
+import Directory from "../../directory/directory-component";
 import categoryList from "../../category-list.json";
 
 function Home() {
