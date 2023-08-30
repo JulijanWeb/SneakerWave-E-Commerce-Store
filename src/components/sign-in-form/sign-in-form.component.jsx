@@ -1,18 +1,19 @@
 import { useState, useContext } from "react";
-
+import { useNavigate } from "react-router-dom";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 import { UserContext } from "../../contexts/user.context";
 import { signInAuthUserWithEmailAndPassword } from "../../core/utils/firebase.utils";
 
 import "./sign-in-form.styles.scss";
-
 const defaultFormFields = {
   email: "",
   password: "",
 };
 
 const SignInForm = () => {
+  const navigate = useNavigate();
+
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
   const { setCurrentUser } = useContext(UserContext);
@@ -23,6 +24,7 @@ const SignInForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     alert("You signed in succesfully!");
+    navigate("/shop");
 
     try {
       const { user } = await signInAuthUserWithEmailAndPassword(

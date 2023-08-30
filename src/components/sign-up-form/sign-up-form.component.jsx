@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-
+import { useNavigate } from "react-router-dom";
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 import { UserContext } from "../../contexts/user.context";
@@ -19,6 +19,7 @@ const defaultFormFields = {
 };
 
 const SignUpForm = () => {
+  const navigate = useNavigate();
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
   const { setCurrentUser } = useContext(UserContext);
@@ -29,6 +30,7 @@ const SignUpForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     alert("You registered succesfully!");
+    navigate("/shop");
 
     if (password !== confirmPassword) {
       alert("passwords do not match");
