@@ -2,12 +2,14 @@ import { create } from "zustand";
 import db from "../../core/utils/firebase.utils";
 import { collection, getDocs } from "firebase/firestore";
 
-const useProductsStore = create((set) => ({
+const useProductsStore = create((set, get) => ({
   products: [],
   filters: {
     brands: [],
     categories: [],
   },
+  brands: [],
+  categories: [],
 
   setFilters: (filters) => {
     set({ filters });
@@ -41,6 +43,16 @@ const useProductsStore = create((set) => ({
         ...doc.data(),
       });
     });
+
+    const categoriesWithoutBrands = [];
+    for (let i = 0; i < categories.length; i++) {
+      if (categories[i].name !== "Brands") {
+        categoriesWithoutBrands.push(categories[i]);
+      }
+    }
+
+    set({ brands: brands });
+    set({ categories: categoriesWithoutBrands });
 
     const newProducts = products.map((product) => {
       const brand = brands.find((brand) => brand.id === product.brandId);

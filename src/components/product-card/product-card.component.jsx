@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../button/button.component";
 import "./product-card.styles.scss";
 import { useState } from "react";
-import useCartStore from "../../shop/cart-store.store";
+import useCartStore from "../../routes/shop/cart-store.store";
 
 const ProductCard = ({
   imageUrl,

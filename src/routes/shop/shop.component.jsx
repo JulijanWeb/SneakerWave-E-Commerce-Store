@@ -2,6 +2,7 @@ import { useQuery, gql } from "@apollo/client";
 import { useEffect, useState } from "react";
 import useProductsStore from "./product.store";
 import ReactLoading from "react-loading";
+import Filter from "../../components/filter/filter.component";
 import ProductCard from "../../components/product-card/product-card.component.jsx";
 import "./shop.styles.scss";
 const Shop = () => {
@@ -65,21 +66,24 @@ const Shop = () => {
   }
 
   return (
-    <div className="products-container">
-      {filteredProducts.map((product) => (
-        <ProductCard
-          key={product.id}
-          id={product.id}
-          sizes={product.sizes}
-          imageUrl={product.imageUrl}
-          name={product.name}
-          price={product.price}
-          quantity={product.quantity}
-          category={product.category}
-          brand={product.brand}
-        />
-      ))}
-    </div>
+    <>
+      <Filter />
+      <div className="products-container">
+        {filteredProducts.map((product) => (
+          <ProductCard
+            key={product.id}
+            id={product.id}
+            sizes={product.sizes}
+            imageUrl={product.imageUrl}
+            name={product.name}
+            price={product.price}
+            quantity={product.quantity}
+            category={product.category}
+            brand={product.brand}
+          />
+        ))}
+      </div>
+    </>
   );
 };
 

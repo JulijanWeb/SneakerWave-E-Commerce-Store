@@ -1,0 +1,25 @@
+.dropdown {
+  font-family: "Open Sans Condensed";
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 0;
+  color: black;
+  background-color: white;
+  border: 1px;
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+}
+
+.removeAll {
+  background: none;
+  border: none;
+  border: 0;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-left: 30px;
+}
