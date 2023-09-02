@@ -16,9 +16,7 @@ const CartDropdown = () => {
 
   const removeFromCart = useCartStore((state) => state.removeFromCart);
   const resetCart = useCartStore((state) => state.resetCart);
-
   const [isCartOpened, setIsCartOpened] = useState(false);
-
   const countCart = cart.length;
 
   const closeCartDropdown = () => {

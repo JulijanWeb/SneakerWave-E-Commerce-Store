@@ -49,7 +49,7 @@ const Filter = () => {
         value={selectedCategory}
         onChange={handleCategoryChange}
       >
-        <option value="">Sve kategorije</option>
+        <option value="">All categories</option>
         {categories.map((category) => (
           <option key={category.id} value={category.name}>
             {category.name}
@@ -64,7 +64,7 @@ const Filter = () => {
         value={selectedBrand}
         onChange={handleBrandChange}
       >
-        <option value="">Svi brandovi</option>
+        <option value="">All brands</option>
         {brands.map((brand) => (
           <option key={brand.id} value={brand.name}>
             {brand.name}
