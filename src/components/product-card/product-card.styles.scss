@@ -35,15 +35,16 @@
   }
 
   .product-image {
-    object-fit: cover;
-    padding: 10px;
+    object-fit: contain;
+    padding: 1px;
     margin-bottom: 5px;
-    transition: filter 0.3s ease; /* Add transition for smooth effect */
+    transition: filter 0.3s ease;
   }
+
   &:hover {
     .product-image {
       opacity: 0.8;
-      object-fit: cover;
+      object-fit: contain;
       filter: blur(2px);
     }
 
