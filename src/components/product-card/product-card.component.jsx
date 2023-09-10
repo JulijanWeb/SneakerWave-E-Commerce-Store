@@ -46,41 +46,35 @@ const ProductCard = ({
     }
   };
   return (
-    <div className="container">
-      <div className="product-card-container">
-        <span className="brand">
-          <img src={brand?.imageUrl} />
-        </span>
-        <div className="size-dropdown">
-          <select
-            className="dropdown"
-            value={cSize}
-            onChange={handleSizeChange}
-          >
-            <option value="">Select Size</option>
-            {sizes.map((size, index) => (
-              <option key={index} value={size}>
-                {size}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <img className="product-image" src={imageUrl} alt={name} />
-
-        <div className="footer">
-          <span className="name">{name}</span>
-          <span className="price">{price} €</span>
-          <span className="category">{category?.name}</span>
-        </div>
-
-        <Button
-          buttonType={cSize ? "" : "disabled"}
-          onClick={() => buttonClick({ imageUrl, name, price, id, quantity })}
-        >
-          Add to cart
-        </Button>
+    <div className="product-card-container">
+      <span className="brand">
+        <img src={brand?.imageUrl} />
+      </span>
+      <div className="size-dropdown">
+        <select className="dropdown" value={cSize} onChange={handleSizeChange}>
+          <option value="">Select Size</option>
+          {sizes.map((size, index) => (
+            <option key={index} value={size}>
+              {size}
+            </option>
+          ))}
+        </select>
       </div>
+
+      <img className="product-image" src={imageUrl} alt={name} />
+
+      <div className="footer">
+        <span className="name">{name}</span>
+        <span className="price">{price} €</span>
+        <span className="category">{category?.name}</span>
+      </div>
+
+      <Button
+        buttonType={cSize ? "" : "disabled"}
+        onClick={() => buttonClick({ imageUrl, name, price, id, quantity })}
+      >
+        Add to cart
+      </Button>
     </div>
   );
 };

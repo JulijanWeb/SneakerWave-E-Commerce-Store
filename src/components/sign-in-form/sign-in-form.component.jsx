@@ -13,7 +13,6 @@ const defaultFormFields = {
 
 const SignInForm = () => {
   const navigate = useNavigate();
-
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
   const { setCurrentUser } = useContext(UserContext);

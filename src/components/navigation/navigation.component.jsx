@@ -1,6 +1,5 @@
 import { Fragment, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { Outlet, Link } from "react-router-dom";
+import { useNavigate, Outlet, Link } from "react-router-dom";
 import "./navigation.styles.scss";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { UserContext } from "../../contexts/user.context";
