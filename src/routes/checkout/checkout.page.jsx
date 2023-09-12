@@ -1,7 +1,6 @@
 import "./checkout.styles.scss";
 import useCartStore from "../../routes/shop/cart-store.store";
 import { FaTrash } from "react-icons/fa";
-import Button from "../../components/button/button.component";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 
