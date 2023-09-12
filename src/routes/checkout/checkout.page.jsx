@@ -1,5 +1,6 @@
 import "./checkout.styles.scss";
 import useCartStore from "../../routes/shop/cart-store.store";
+import Button from "../../components/button/button.component";
 import { FaTrash } from "react-icons/fa";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
@@ -73,9 +74,14 @@ const Checkout = () => {
           </table>
 
           <div className="total-sum-container">
-            <span className="total-sum">
-              Total: <span className="light-sum">{calculateTotal()} €</span>
-            </span>
+            <div className="total-container">
+              <span className="buy-button">
+                <Button>Buy</Button>
+              </span>
+              <span className="total-sum">
+                Total: <span className="light-sum">{calculateTotal()} €</span>
+              </span>
+            </div>
           </div>
         </div>
       )}
