@@ -21,7 +21,6 @@ const typeDefs = gql`
     sizes: [String]
     quantity: Float
   }
-
   type Query {
     products: [Product]
   }

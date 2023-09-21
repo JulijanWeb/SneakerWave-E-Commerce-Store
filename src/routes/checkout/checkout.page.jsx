@@ -79,7 +79,7 @@ const Checkout = () => {
                 <Button>Buy</Button>
               </span>
               <span className="total-sum">
-                Total: <span className="light-sum">{calculateTotal()} €</span>
+                Total:<span className="light-sum"> {calculateTotal()} €</span>
               </span>
             </div>
           </div>

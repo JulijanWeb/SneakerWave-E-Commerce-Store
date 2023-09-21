@@ -22,8 +22,6 @@ const SignInForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    alert("You signed in succesfully!");
-    navigate("/shop");
 
     try {
       const { user } = await signInAuthUserWithEmailAndPassword(
@@ -32,6 +30,8 @@ const SignInForm = () => {
       );
       setCurrentUser(user);
       resetFormFields();
+      alert("You signed in succesfully!");
+      navigate("/shop");
     } catch (error) {
       switch (error.code) {
         case "auth/wrong-password":
